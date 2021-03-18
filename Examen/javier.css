@@ -1,0 +1,18 @@
+
+body{
+    background: rgb(236, 216, 155);color: #fff;
+    font-family: 'Oswald', sans-serif;
+    background-color: #68d0f4;
+
+}
+
+.cabecera{
+    background: rgb(20, 16, 16);
+    padding: auto;
+    font: bold 14px verdana;
+}
+
+.menu {
+    list-style: none;
+    padding: 5px;
+}

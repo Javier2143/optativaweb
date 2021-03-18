@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="javier.css">
+    <meta charset="UTF-8">
+  <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyC777p8vUtCP9pqQMQsL11L9tNxH3hYzE4",
+    authDomain: "javier-espinalesf-optativa.firebaseapp.com",
+    databaseURL: "https://javier-espinalesf-optativa-default-rtdb.firebaseio.com",
+    projectId: "javier-espinalesf-optativa",
+    storageBucket: "javier-espinalesf-optativa.appspot.com",
+    messagingSenderId: "393640846424",
+    appId: "1:393640846424:web:3c54ae3ab924cc2130162d",
+    measurementId: "G-0QBRRGLBYR"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  </script>
+  <div class="container">
+     <header id="cabecera"> <h1>Agregar Dispositivos</h1>
+     </header>
+      <input type="text" id="NumeroS" placeholder="Numero De Serie" class="form">
+      <input type="text" id="Descripcion" placeholder="Descripcion" class="form">
+      <input type="text" id="Tamaño" placeholder="Tamaño" class="form">
+      <input type="text" id="SistemaO" placeholder="Sistema Operativo" class="form">
+      <input type="text" id="Camara" placeholder="Camara" class="form">
+      <input type="text" id="RAM" placeholder="RAM" class="form">
+      <button class="btn" id="boton" onclick="agregar()">Agregar</button>
+
+      <table class="tabla">
+          <thead>
+            <nav class="menu"></nav>
+             <tr>
+              
+              <th scope="col">NumeroS</th>
+              <th scope="col">Descripcion</th>
+              <th scope="col">Tamaño</th>
+              <th scope="col">SistemaO</th>
+              <th scope="col">Camara</th>
+              <th scope="col">RAM</th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+             </tr>
+          </nav>
+          </thead>
+          <tbody id="tabla1">
+              
+          </tbody>
+      </table>
+  </div>
+
+ <script src="javier.js"></script>
+</body>
+</html>
